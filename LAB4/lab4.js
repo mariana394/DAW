@@ -1,50 +1,42 @@
-//var nombre= prompt("dime tu nombre");
-//alert("hola, "+ nombre); Para producir el ingreso de nombre y salida de tu nombre
+
  function tabla() {
-  // Obtener la referencia del elemento body
   var num=prompt("Escribe un numero");
 var potencia=1;
-  var body = document.getElementsByTagName("body")[0];
- 
-  // Crea un elemento <table> y un elemento <tbody>
-  var tabla   = document.createElement("table");
+  var article = document.getElementsByTagName("article")[0];
+   var tabla   = document.createElement("table");
   var tblBody = document.createElement("tbody");
  
-  // Crea las celdas
   for (let i = 1; i <= num; i++) {
-    // Crea las hileras de la tabla
-    var hilera = document.createElement("tr");
+    var column = document.createElement("tr");
  
     for (let j = 1; j <=3; j++) {
-      // Crea un elemento <td> y un nodo de texto, haz que el nodo de
-      // texto sea el contenido de <td>, ubica el elemento <td> al final
-      // de la hilera de la tabla
-      var celda = document.createElement("td");
+    
+      var row = document.createElement("td");
 if(potencia==1){
-	var textoCelda = document.createTextNode(i);
+	var textRow = document.createTextNode(i);
 
 }
 if(potencia==2){
-var textoCelda = document.createTextNode(i*i);
+var textRow = document.createTextNode(i*i);
 }
 if(potencia==3){
-var textoCelda = document.createTextNode(i*i*i);
+var textRow = document.createTextNode(i*i*i);
 }
 potencia++;
       
-      celda.appendChild(textoCelda);
-      hilera.appendChild(celda);
+      row.appendChild(textRow);
+      column.appendChild(row);
     }
     potencia=1;
  
     // agrega la hilera al final de la tabla (al final del elemento tblbody)
-    tblBody.appendChild(hilera);
+    tblBody.appendChild(column);
   }
  
   // posiciona el <tbody> debajo del elemento <table>
   tabla.appendChild(tblBody);
   // appends <table> into <body>
-  body.appendChild(tabla);
+  article.appendChild(tabla);
   // modifica el atributo "border" de la tabla y lo fija a "2";
   tabla.setAttribute("border", "2");
 }
