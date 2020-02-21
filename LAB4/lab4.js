@@ -4,7 +4,7 @@
 var potencia=1;
   var article = document.getElementsByTagName("article")[0];
    var tabla   = document.createElement("table");
-  var tblBody = document.createElement("tbody");
+  var tBody = document.createElement("tbody");
  
   for (let i = 1; i <= num; i++) {
     var column = document.createElement("tr");
@@ -29,15 +29,11 @@ potencia++;
     }
     potencia=1;
  
-    // agrega la hilera al final de la tabla (al final del elemento tblbody)
-    tblBody.appendChild(column);
+    tBody.appendChild(column);
   }
  
-  // posiciona el <tbody> debajo del elemento <table>
   tabla.appendChild(tblBody);
-  // appends <table> into <body>
   article.appendChild(tabla);
-  // modifica el atributo "border" de la tabla y lo fija a "2";
   tabla.setAttribute("border", "2");
 }
 
@@ -70,17 +66,7 @@ function contador(array){
 
 function promedios(){
 
-	document.write("<table width=200 border=1 cellpadding=1 cellspacing=1>"); 
-for (i=0;i<temperaturas_cuidades.length;i++){ 
-   	document.write("<tr>") 
-   	document.write("<td><b>Ciudad " + i + "</b></td>") 
-   	for (j=0;j<temperaturas_cuidades[i].length;j++){ 
-      	document.write("<td>" + temperaturas_cuidades[i][j] + "</td>") 
-   	} 
-   	document.write("</tr>") 
-} 
-document.write("</table>")
-}
+	}
 function inverso(num){
 return Number(num.toString().split('').reverse().join(''));
 
