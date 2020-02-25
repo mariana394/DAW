@@ -115,23 +115,17 @@ function inverso(){
 
 
 }
-function SASTI(nombre,semestre,matricula,cargo){
+class SASTI{
+
+
+ constructor(nombre,semestre,matricula,cargo){
     this.nombre=nombre;
     this.semestre=semestre;
     this.matricula=matricula;
     this.cargo=cargo;
   } 
-function tabla(){
-  let nombreS = document.getElementById("nombre").value;
-  let semestreS = document.getElementById("semestre").value;
-  let matriculaS = document.getElementById("matricula").value;
-  let cargoS = document.getElementById("cargo").value;
-  
-  nuevoIntegrante = new SASTI(nombreS,semestreS,matriculaS,cargoS); 
-  
- agregarIntegrante(nuevoIntegrante);
-}
 
+}
  
   function agregarIntegrante(integrante){
   var datosSociedad = []; 
@@ -142,6 +136,17 @@ function tabla(){
   
   }
 
+  function tabla(){
+  let nombreS = document.getElementById("nombre").value;
+  let semestreS = document.getElementById("semestre").value;
+  let matriculaS = document.getElementById("matricula").value;
+  let cargoS = document.getElementById("cargo").value;
+  
+  nuevoIntegrante = new SASTI(nombreS,semestreS,matriculaS,cargoS); 
+  
+ agregarIntegrante(nuevoIntegrante);
+}
+
   function combinaciones (integrantes, eventos) {
 var integrantes= document.getElementById("integrantes").value;
   var eventos = document.getElementById("eventos").value;
@@ -149,6 +154,9 @@ var integrantes= document.getElementById("integrantes").value;
   var totalI = 1,totalE = 1,totalR = 1; 
 var combinacion=0;
   var resta=integrantes-eventos;
+
+while(integrantes>=eventos){
+
 
   for (i=1; i<=integrantes; i++) {
     totalI = totalI * i; 
@@ -164,6 +172,9 @@ var combinacion=0;
 combinacion=totalI/(totalE*totalR);
 
   document.write("El numero de combinaciones que puedes hacer para los eventos son: "+combinacion);
+}
+  document.write("ERROR");
+
 }
   
 
