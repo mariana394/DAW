@@ -10,15 +10,13 @@
 	<h1>Provando JS</h1>
 </heather>
 <article>
-	<button name="" onclick="tabla()"> Ejercicio 1</button>
-
-	</article>
-<article>
+<button name="" onclick="tabla()"> Ejercicio 1</button>
 <button name="" onclick="suma()"> Ejercicio 2</button>
-<button name="" onclick="contador(array[].toString)"> Ejercicio 3</button>
-<button name="" onclick="suma()"> Ejercicio 4</button>
+<button name="" onclick="contador([7,-1,2,0,0,-2,8,-7].toString())"> Ejercicio 3</button>
+<button name="" onclick="promedios()"> Ejercicio 4</button>
 <button name="" onclick="inverso()"> Ejercicio 5</button>
-<button name="" onclick="divisas()"> Ejercicio 6</button>
+<button name="" onclick="analisis_numero()"> Ejercicio 6</button>
+
 </article>
 <article>
 	<h3>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h3>
@@ -29,54 +27,125 @@
 
 <article>
 	<h3>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</h3>
-	<li> Getters y Setters de la fecha</li>
-	<li>Getters y setters del año</li>
-	<li>Getters y setters del tiempo</li>
-	<li> Parse</li>
-	<li> toString()</li>
+	<li> now(): Regresa la fecha y hora actual</li>
+	<li>parse(): Regresa los milisegundos que han pasado desde 01-01-1970 hasta la fecha actual</li>
+	<li> UTC():Regresa el numero de milisegundos desde la madrugada de 01-01-1970 hasta la fecha con respecto a la hora UTC </li>
+	<li>valueOf(): Regresa los valores primitivos de una fecha</li>
+	<li> Setters y Getters del dia, el año, el mes, los minutos (etc)</li>
 
 <article>
 	<h3>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</h3>
 
-
+	<li> CONCAT: encadenar diferentes elementos que estan separados por comas o que estan en diferentes matrices</li>
+	<li> SLICE: hace una copia de una seccion especifica de una matriz </li>
+	<li> INDEXOF: regresa el indice del primer elemento que coincida con el parametro</li>
+	<li> SORT: Ordena los elemntos en el arreglo.</li>
+	<li> REDUCE: reduce el arreglo en un valor de izquierda a derecha. </li>
+	
 </article>
 
 <article>
 	<h3>¿Cómo se declara una variable con alcance local dentro de una función?</h3>
 	<p>
-		let
-
+		let: la variable existe en la seccion en la que fue creada.
 	</p>
 
 </article>
 
 <article>
 	<h3>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h3>
-	<p>
-		Por mas de que sea global no la pueden acceder otras funciones. //El ámbito de una variable global son todas las funciones que componen el programa, cualquier función puede acceder a dichas variables para leer y escribir en ellas. 
-	</p>
+	<p> Esta variable al ser global puede ser utilizada dentro de todo el archivo JS lo que significa que ninguna otra puede tener el mismo nombre y al poder ser modificada facilmente puede llegar a generar confusion si su uso no es el correcto. </p>
 </article>
 
 <article>
 	<h3>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</h3>
 	<p>
-		<li> Match</li>
-		<li> Replace</li>
-		<li> Search</li>
-		<li> Splir</li>
-
-	</p>
+		
+		El metodo match() es un metodo que se encarga de buscar en una cadena patrones con expresiones regulares y regresa en lo que coinciden. En una pagina web puede servir para una barra de busqueda e incluso cuando se hace uso del comando controF de encontrar una palabra en tu texto grande. </p>
+	
 </article>
 
 <article>
 
 	<h3>Descripcion del ejercicio 6:</h3>
+	Actualmente soy la presidente de la sociedad de alumnos de Ingerieria en Sistemas Computacionales (SASTI). Para llevar a cabo los diferentes proyectos que tenemos en nuestro plan de trabajo hacemos equipos de 3 personas pero me gustaria que siempre fueran diferentes para que las personas en la sociedad se conozcan mas y puedan aprender el uno del otro. Por eso decidi resolver mediante dos metodos esta inquietud. El primero es que por medio de un arreglo pueda tener la informacion de cada uno de ellos.
+	<br>
+	<li> Nombre Completo</li>
+	<li> Matricula</li>
+	<li> Semestre</li>
+	<li> Puesto</li>
 
-	<p> Actualmente 
-	</p>
+	<br>
+	Despues de tener esta informacion por medio de una combinatoria lograr decifrar cuantas combinaciones diferentes de equipos puedo hacer para los proyectos.
+	<br><br>
+	<p><b>Ingreso de alumnos en la planilla</b></p>
+	<br>
+	<p>Nombre:</p>
+	<input type="text" id="nombre">
+	<br><p> Semestre:</p>
+	<input type="text" id="semestre">
+	<br><p> Matricula:</p>
+	<input type="text" id="matricula">
+	<br><p> Cargo:</p>
+	<input type="text" id="cargo">
+<br><br>
+	<button name="" onclick="tabla()">Agregar Integrante</button>
+	<br><br>
+	<hr>
+	<table id="tabla">
+		<thead>
+			
+			<tr>
+				<th>Nombre</th>
+				<th>Semestre</th>
+				<th>Matricula</th>
+				<th>Puesto</th>
+			</tr>
+			
+		</thead>
+		
+	</table>
+	<hr>
+	<p> <b>Creacion del numero de combinaciones posibles para equipos de los eventos</b></p>
+	<p>Numero de Integrantes:</p>
+	<input type="text" id="integrantes">
+	<br><p> Numero de eventos:</p>
+	<br>
+	<input type="text" id="eventos">
+	<button name="" onclick="combinaciones()">Combinaciones</button>
+
+
 </article>
 
-<script type = "text/javascript" src = "lab4.js"></script>
 
+<article>
+	<h3>Referencias: </h3>
+	<br>https://www.gestiopolis.com/diferencias-java-javascript/
+<br>
+https://www.acceseo.com/las-diferencias-java-y-javascript.html
+<br>
+https://www.campusmvp.es/recursos/post/Java-y-JavaScript-son-lo-mismo.aspx
+<br>
+https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Date
+<br>
+https://www.digitallearning.es/intro-programacion-js/metodos-date.html
+<br>
+https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array
+<br>
+https://www.ecured.cu/Arreglos_en_Javascript
+<br>
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions
+<br>
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions
+<br>
+</article>
+ <footer>
+            <h4> A01704671 Mariana Favarony Avila  <a href="https://www.sublimetext.com/">SUBLIME </a></h4>
+           
+
+        </footer>
+
+        <script type = "text/javascript" src = "lab4.js"></script>
+ 
 </body>
 </html>

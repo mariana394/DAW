@@ -1,23 +1,15 @@
 h3 {
-        background-color: #89D0FF;
-
     font-size: 27px;
     font-family: Tahoma;
     color: black;
     text-align: left;
+    background-color: #89D0FF;
 }
-h4{
-     background-color: #89B4FF;
-     font-family: Tahoma;
-    font-size: 19px;
-     color: black;
-    text-align: center;
-}
-h1 {
+header {
+    background-color: #89B4FF;
         text-align: center;
         padding-left: 50px;
         padding-right: 40px;
-    background-color: #89B4FF;
 
 }
 footer.page-footer {
