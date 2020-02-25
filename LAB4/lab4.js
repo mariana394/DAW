@@ -138,7 +138,7 @@ function tabla(){
   datosSociedad.push(integrante);
   
   console.log(datosSociedad);
-  document.getElementById("tabla").innerHTML +='<tbody><td>'+ integrante.nombre +'</td><td>'+integrante.semestre+'</td><td>'+integrante.matricula +'</td> </tbody>'+integrante.cargo +'</td> </tbody>';
+  document.getElementById("tabla").innerHTML +='<tbody><td>'+ integrante.nombre +'</td><td>'+integrante.semestre+'</td><td>'+integrante.matricula +'</td> <td>'+integrante.cargo +'</td> </tbody>';
   
   }
 
