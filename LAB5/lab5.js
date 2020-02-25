@@ -1,44 +1,74 @@
-h3 {
-        background-color: #89D0FF;
 
-    font-size: 27px;
-    font-family: Tahoma;
-    color: black;
-    text-align: left;
+function contra(){
+
+  let c1 = document.getElementById("pass1").value;
+  let c2 = document.getElementById("pass2").value;
+
+  if (c1 != c2) {
+  alert("Las contraseñas no coinciden");
+  return false;
+} else {
+  alert("Las contraseñas coinciden");
+  return true; 
 }
-h4{
-     background-color: #89B4FF;
-     font-family: Tahoma;
-    font-size: 19px;
-     color: black;
-    text-align: center;
-}
-h1 {
-        text-align: center;
-        padding-left: 50px;
-        padding-right: 40px;
-    background-color: #89B4FF;
 
 }
-footer.page-footer {
-  margin: 0;
-}
+
+function mostrar(){
+
+  let sc1 = document.getElementById("pass1").value;
+  let sc2 = document.getElementById("pass2").value;
+
+  if (sc1.type === "password") {
+    sc1.type = "text";
 
 
-article {
-    padding: 5px;
-    padding-right: 100px;
-    padding-left: 50px;
-    padding-top: 0px;
+  } else {
+    sc1.type = "password";
+  }
+
+  if(sc2.type === "password"){
+     sc2.type = "text";
+  }else {
+    sc2.type = "password";
+  }
 }
-p {
-    padding-right: 10px;
-	padding-left: 10px;
-	font-family: Tahoma;
-	font-size: 15px;
+
+//->OOP
+class Product{
+
+  constructor(name, price) {  
+  this.name = name;  
+  this.price = price;
 }
-body {
+}
+
+class Carrito{
+constructor() {  
+  this.products=[];
+}
+}
+
+//metodo para agregar al carrito
+   function addProduct(amount, product) {    
+      this.products.push(…Array(amount).fill(product)); 
+   }
+   //cuanto va a pagar
+  function calcTotal() {    
+    return this.products      .map(product => product.price)      .reduce((a, b) => a + b, 0);  
+  }
+  //tiquet
   
-  background-color:89E4FF;
-  
-}
+ function  printShoppingInfo() {   
+   console.log('one has to pay in total: ' + this.calcTotal()); 
+    }
+
+
+
+const snorkel = new Product('snorkel', 1);
+const aletas = new Product('aletas', .25);
+const carrito = new Carrito();
+carrito.addProduct(2, snorkel);
+carrito.addProduct(3, aletas);
+carrito.printShoppingInfo();//tostring
+
