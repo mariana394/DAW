@@ -10,32 +10,134 @@
 	<heather>
 	<h1>Programacion orientada a eventos</h1>
 </header>
-
+<hr>
 <article>
 		Contraseña:<input type="password" id="pass1" size="8">
 	Verificacion de Contraseña:	<input type="password" id="pass2" size="8">
-	<br><br>
-<input type="checkbox" onclick="mostrar()">Show Password
+
+
 <br><br>
-		<button name="" onclick="contra()"> Verificar</button>
+		<button name="" onclick="contraseña()"> Verificar</button>
 	
 
 </article>
+<hr>
+<article>
+<h1>Scuba Diving Store</h1>
+<table>
+        <tr>
+            <th>
+      <img src="aletas.jpg">
+ 
+       	    <h5>ALETAS CRESSI $<span id="precioAletas">5000</span></h5>
+
+       <div id="Aletas"></div>
+     <button type="button" onclick="aletas()">Más información</button>
+    <br>
+    <form>
+    <label >Cantidad:</label>
+    <input type="number" id="cantAletas" name="Cantidad" min="1" max="5" value="1">
+    <label >Descuento:</label>
+     <input type="number" id="desAletas" name="Cantidad" min="0" max="100" value="0">
+      </form>
+      </th>
+      <th>
+
+        <img src="careta.png">
+<br><br>
+    
+     <h5>MASCARA Y SNORKEL CRESSI $<span id="precioSnorkel">3000</span></h5>
+            <div id="snorkel"></div>
+
+     <button name="" onclick="snorkel()">Más información</button>
+     <br>
+    <form>
+     <label for="Cantidad" class="text-white">Cantidad:</label>
+     <input type="number" id="cantSnorkel" name="Cantidad" min="0" max="5" value="1">
+   <label for="Cantidad" id="Field" class="text-white">Descuento:</label>
+     <input type="number" id="disSnorkel" name="Cantidad" min="0" max="100" value="0">
+      </form>
+     </th>
+     <th>
+
+        <img  src="chaleco.jpg" >
+    <br><br>
+      <h5>CHALECO CRESSI $<span id="precioChaleco">10000</span></h5>
+      <div id="chaleco"></div>
+
+       <button name="" onclick="Chaleco()">Más información</button>
+       <br>
+      <form>
+     <label for="Cantidad" class="text-white">Cantidad:</label>
+     <input type="number" id="cantChaleco" name="Cantidad" min="1" max="5" value="1">
+    <label for="Cantidad" id="Field" class="text-white">Descuento:</label>
+     <input type="number" id="disChaleco" name="Cantidad" min="0" max="100" value="0">
+     </form>
+      </div>
+       </div>
+   </th>
+</tr>
+</table>
+    <button name="" onclick="total()">Monto final</button>
+    <h3 id="Total"></h3>
+    <h3 id="IVA"></h3>
+ 
+ </article>
+
+
+    <article>
+<h1>SASTI Formulario</h1>
+<p>Para la organizacion de los eventos cada equipo debe llenar un documento con la informacion de su evento. En el formulario presentado a continuacion el encargado debera de llenar los campos generales y subir el archivo con los detalles. Estos campos se llenan para saber de que evento se esta hablando.</p>
+<form>
+ <h2 id="Registro">Formulario Eventos SASTI</h2>
+
+	<label >Nombre del Evento: </label>
+        <input type="text" id="Evento" >
+    <br><br>
+
+	<label >Fecha del evento</label>
+         <input type="date" id="Fecha">
+	<br><br>
+
+    <label >Lugar del Evento: </label>
+        <input type="text" id="Lugar">
+	<br><br>
+
+	<label >Personas a cargo: </label>
+        <input type="text" id="Encargado">
+	<br><br>
+
+    <label >No. Asistentes: </label>
+        <input type="text" id="Asistentes">
+	<br><br>
+    
+    <label>Archivo: </label>
+        <input type="file" id="file"> 
+     <br><br>
+	 <button type="button" class="btn btn-secondary" onclick="formularioCompleto()">Enviar</button>
+      <input type="reset" value="Borrar información">
+
+    </form>
+    </article>
+<hr>
 
 <article>
 	<h3>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</h3>
 	<li> Le deja saber al usuario de manera instantanea si ha cometido un error sin necesidad de esperar una respuesta del servidor</li>
 	<li> Reduce la carga de procesamiento en el servidor</li>
 	<li> Comprueba todo antes de mandarlo al servidor</li>
+        <li> Para evitar errores del usuario</li>
+
 </article>
 
 <article>
 	<h3>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h3>
-<p> Si, por medio de la modificacion de la funcion OnSubmit. Hacer que la funcion que manda a llamar a el onsubmit que regrese un true, lo que significaria que el formulario si se ha enviado.</p>
+<p> Desactivando la funcionalidad de JS manualmente</p>
 </article>
 
 <article>
 	<h3>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h3>
+    <p>Porque de esta manera se puede hacer una revision de lo que esta en la base de datos conectada y asi poder validarlos.</p>
 </article>
 
 <article>
