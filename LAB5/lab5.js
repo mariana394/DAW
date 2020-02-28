@@ -85,7 +85,7 @@ function total(){
   var impuesto = Math.ceil(totalSnorkel + totalChaleco + totalAletas)*IVA;
 
   document.getElementById("Total").innerHTML = 
-    "Total = $" + totalFinal + 
+    "Total= $" + totalFinal + 
   "";
   document.getElementById("IVA").innerHTML = 
     "IVA = $" + impuesto + 
