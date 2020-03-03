@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<link rel="stylesheet" type="text/css" href="lab7.css">
+
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation LAB7</title>
+    <link rel="stylesheet" href="foundation.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="lab7.css">
+
+
+    <style>
+      .spacer{height:500px;}
+    </style>
+</head>
+<body style="margin:400">
+	<heather>
+	<h1>Programacion orientada a eventos</h1>
+</header>
+<hr>
+ <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+      <br><br>
+<article>
+		Contraseña:<input type="password" id="pass1" size="8">
+	Verificacion de Contraseña:	<input type="password" id="pass2" size="8">
+
+
+<br><br>
+		<button class="warning button" name="" onclick="contraseña()"> Verificar</button>
+
+
+</article>
+<hr>
+<article>
+<h1>Scuba Diving Store</h1>
+<table>
+        <tr>
+            <th>
+      <img src="aletas.jpg">
+ 
+       	    <h5>ALETAS CRESSI $<span id="precioAletas">5000</span></h5>
+
+       <div id="Aletas"></div>
+     <button class="button small" type="button" onclick="aletas()">Más información</button>
+    <br>
+    <form>
+    <label >Cantidad:</label>
+    <input type="number" id="cantAletas" name="Cantidad" min="1" max="5" value="1">
+    <label >Descuento:</label>
+     <input type="number" id="desAletas" name="Cantidad" min="0" max="100" value="0">
+      </form>
+      </th>
+      <th>
+
+        <img src="careta.png">
+<br><br>
+    
+     <h5>MASCARA Y SNORKEL CRESSI $<span id="precioSnorkel">3000</span></h5>
+            <div id="snorkel"></div>
+
+     <button class="button small" name="" onclick="snorkel()">Más información</button>
+     <br>
+    <form>
+     <label for="Cantidad" class="text-white">Cantidad:</label>
+     <input type="number" id="cantSnorkel" name="Cantidad" min="0" max="5" value="1">
+   <label for="Cantidad" id="Field" class="text-white">Descuento:</label>
+     <input type="number" id="disSnorkel" name="Cantidad" min="0" max="100" value="0">
+      </form>
+     </th>
+     <th>
+
+        <img  src="chaleco.jpg" >
+    <br><br>
+      <h5>CHALECO CRESSI $<span id="precioChaleco">10000</span></h5>
+      <div id="chaleco"></div>
+
+       <button class="button small" name="" onclick="Chaleco()">Más información</button>
+       <br>
+      <form>
+     <label for="Cantidad" class="text-white">Cantidad:</label>
+     <input type="number" id="cantChaleco" name="Cantidad" min="1" max="5" value="1">
+    <label for="Cantidad" id="Field" class="text-white">Descuento:</label>
+     <input type="number" id="disChaleco" name="Cantidad" min="0" max="100" value="0">
+     </form>
+      </div>
+       </div>
+   </th>
+</tr>
+</table>
+    <button class="success button" name="" onclick="total()">Monto final</button>
+    <h3 id="Total"></h3>
+    <h3 id="IVA"></h3>
+ 
+ </article>
+
+
+    <article>
+<h1>SASTI Formulario</h1>
+<p class="lead">Para la organizacion de los eventos cada equipo debe llenar un documento con la informacion de su evento. En el formulario presentado a continuacion el encargado debera de llenar los campos generales y subir el archivo con los detalles. Estos campos se llenan para saber de que evento se esta hablando.</p>
+<form>
+ <h2 id="Registro">Formulario Eventos SASTI</h2>
+
+	<label >Nombre del Evento: </label>
+        <input type="text" id="Evento" placeholder="Nombre del Evento">
+    <br><br>
+
+	<label >Fecha del evento</label>
+         <input type="date" id="Fecha" placeholder="Fecha del Evento">
+	<br><br>
+
+    <label >Lugar del Evento: </label>
+        <input type="text" id="Lugar" placeholder="Lugar del Evento">
+	<br><br>
+
+	<label >Personas a cargo: </label>
+        <input type="text" id="Encargado" placeholder="Personas a cargo">
+	<br><br>
+
+    <label >No. Asistentes: </label>
+        <input type="text" id="Asistentes">
+	<br><br>
+    
+    <label>Carga de Archivos: </label>
+        <input class="waring button" type="file" id="file"> 
+     <br><br>
+	 <button class="success button" type="button" class="btn btn-secondary" onclick="formularioCompleto()">Enviar</button>
+      <input class="alert button" type="reset" value="Borrar información">
+
+    </form>
+    </article>
+<hr>
+ <ul class="tabs" data-tabs id="example-tabs">
+          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">P1</a></li>
+          <li class="tabs-title"><a href="#panel2">P2</a></li>
+           <li class="tabs-title"><a href="#panel3">P3</a></li>
+          <li class="tabs-title"><a href="#panel4">P4</a></li>
+         <li class="tabs-title"><a href="#panel5">P5</a></li>
+
+
+        </ul>
+
+        <div class="tabs-content" data-tabs-content="example-tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <p>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?
+              <ol>
+                <li> Le deja saber al usuario de manera instantanea si ha cometido un error sin necesidad de esperar una respuesta del servidor</li>
+            <li> Reduce la carga de procesamiento en el servidor</li>
+          <li> Comprueba todo antes de mandarlo al servidor</li>
+           <li> Para evitar errores del usuario</li>
+              </ol></p>
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <p>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?
+              <br>Desactivando la funcionalidad de JS manualmente
+            </p>
+          </div>
+
+          <div class="tabs-panel" id="panel3">
+            <p>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?
+              <br>Porque de esta manera se puede hacer una revision de lo que esta en la base de datos conectada y asi poder validarlos.
+            </p>
+          </div>
+
+              <div class="tabs-panel" id="panel4">
+            <p>Describe Material design
+              <br>Es un concepto enfocado al diseño utilizado en cualquier plataforma. Este esta basado en objetos materiales cuya interaccion es transmitida a través de los principios de la luz, la superficie y el movimiento, es un diseño que busca aproximarse a la realidad. Según google, “es un lenguaje que combina los principios innovadores de la tecnología con las normas clásicas del diseño”. 
+            </p>
+          </div>
+
+ <div class="tabs-panel" id="panel5">
+            <p>Referencias:
+              <br> <ol>
+              <li>http://www.forosdelweb.com/f45/saltar-validacion-javascript-626969/</li>
+  <li>https://uniwebsidad.com/libros/javascript/capitulo-7/validacion</li>
+  <li>https://get.foundation/</li>
+  <li>https://www.youtube.com/watch?v=DEu5xYEZx18&t=2992s</li>
+  <li>https://www.nextu.com/blog/material-design-que-es/</li>
+  <li>https://elandroidelibre.elespanol.com/2014/11/que-es-material-design.html</li>
+</ol>
+            </p>
+          </div>
+        </div>
+
+    
+
+
+ 
+
+   
+
+
+
+
+  <!--Visibilidad-->
+<p class="hide">Hidden</p>
+      <p class="invisible">Invisible</p>
+      <p>You are on a small screen or larger.</p>
+      <p class="show-for-medium">You are on a medium screen or larger.</p>
+      <p class="show-for-large">You are on a large screen or larger.</p>
+      <p class="hide-for-small-only">You are not on a small screen.</p>
+      <p class="hide-for-medium-only">You are not on a medium screen.</p>
+      <p class="hide-for-large-only">You are not on a large screen.</p>
+      <p class="show-for-landscape">You are in landscape </p>
+      <p class="show-for-portrait">You are in portrait</p>
+  <p class="hide">
+  </p>
+  
+<footer>
+            <h4> A01704671 Mariana Favarony Avila  <a href="https://www.sublimetext.com/">SUBLIME </a></h4>
+           
+
+        </footer>
+            
+        <script type = "text/javascript" src = "lab7.js"></script>
+        <script src="jquery.js"></script>
+    <script src="what-input.js"></script>
+    <script src="foundation.js"></script>
+    <script src="app.js"></script>
+</heather>
+</body>
+</html>
