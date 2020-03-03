@@ -1,3 +1,37 @@
+
+
+div#content {
+  display: none;
+  color: black;
+}
+button:hover + div#content {
+  display: block;
+}
+#div1, #div2,#div3,#div4 {
+  width: 200px;
+  height: 250px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+body {
+  font-size: 16px;
+}
+body:after {
+  content: "SCUBA"; 
+  font-size: 15em;  
+  color: rgba(52, 166, 214, 0.4);
+  z-index: -1;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+ 
+}
 h3 {
         background-color: #89D0FF;
 
@@ -62,23 +96,7 @@ body {
   
  font-size: 16px;
 }
-
-body {
-  font-size: 16px;
-}
-body:after {
-  content: "SCUBA"; 
-  font-size: 15em;  
-  color: rgba(52, 166, 214, 0.4);
-  z-index: 9999;
- 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
- 
-}
+#myDIV {
+  width: 500px;
+  height: 500px;
+  }
