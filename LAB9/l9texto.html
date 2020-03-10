@@ -1,0 +1,101 @@
+<p> Ejercicio 1:</p>
+<?php
+
+function promedios(){
+$numeros = [rand(10,100),rand(10,100),rand(10,100),rand(10,100),rand(10,100),rand(10,100)];
+
+ $suma = array_sum($numeros);
+  $cantidad= count($numeros);
+  $promedio=$suma/$cantidad;
+ return $promedio;
+}
+  echo promedios();
+  echo "<br>"
+?>
+<p>Ejercicio 2:</p>
+<?php
+function mediana(){
+  $numeros = [3,7,1,5,2,9];
+
+  sort($numeros);
+  $cantidad= count($numeros)-1;
+  $mitad = $cantidad/2;
+  $modulo=$cantidad%2;
+  if($modulo=0){
+  return  $numeros[$mitad];
+
+  }else{
+    $suma=$numeros[$mitad]+$numeros[$mitad+1];
+    $resultado=$suma/2;
+    
+    return $resultado;
+  }
+  }
+
+echo mediana();
+
+
+?>
+<p>Ejercicio 3</p>
+<?php
+function lista(){
+  $numeros = [3,7,1,5,2,9];
+for( $x =0; $x<= 5; ++$x ) {
+ echo $x, "\t", $numeros[x], "\t<br>\n";
+}
+for( $x =0; $x<= 5; ++$x ) {
+ echo $x, "\t", sort($x), "\t<br>\n";
+}
+for( $x =0; $x<= 5; ++$x ) {
+ echo $x, "\t", asort($x), "\t<br>\n";
+}
+for( $x =0; $x<= 5; ++$x ) {
+ echo $x, "\t", $numeros[$x], "\t","\t<br>\n";
+}
+}
+?>
+<p>Ejercicio 4</p>
+<?php
+
+function tabla(){
+    $n=4;
+echo '<table>';
+  $potencia=1;
+for($i=1;$i<=$n;$i++)
+{
+   echo '<tr>';
+   for($j=1;$j<=$n;$j++)
+   {
+     if($potencia=1){
+       echo "<td>$j</td>";
+
+
+     }
+     if($potencia=2){
+       $res=$j*$j;
+       echo "<td>$res</td>";
+
+
+     }
+
+     if($potencia=3){
+              $res=$j*$j*$j;
+
+       echo "<td>$res</td>";
+
+     }
+     $potencia++;
+       echo "<td>";
+                echo '</tr>';
+
+   }
+
+}
+echo '</table>';
+
+}
+
+echo tabla();
+?>
+
+
