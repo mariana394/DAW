@@ -40,20 +40,33 @@ echo mediana();
 <?php
 function lista(){
   $numeros = [3,7,1,5,2,9];
-for( $x =0; $x<= 5; ++$x ) {
- echo $x, "\t", $numeros[x], "\t<br>\n";
+  $longitud=count($numeros);
+
+  for( $x =0; $x<6; $x++ ) {
+    
+echo $numeros[$x],"\t<br>\n";
+    
+  }
+   echo "<br>";
+
+  sort($numeros);
+  for( $x =0; $x< 6; $x++ ) {
+    echo $numeros[$x], "\t<br>\n";
+  }
+   echo "<br>";
+  rsort($numeros);
+  for( $x =0; $x< 6; $x++ ) {
+    echo $numeros[$x], "\t<br>\n";
+  }
+
+     echo "<br>";
+
 }
-for( $x =0; $x<= 5; ++$x ) {
- echo $x, "\t", sort($x), "\t<br>\n";
-}
-for( $x =0; $x<= 5; ++$x ) {
- echo $x, "\t", asort($x), "\t<br>\n";
-}
-for( $x =0; $x<= 5; ++$x ) {
- echo $x, "\t", $numeros[$x], "\t","\t<br>\n";
-}
-}
+echo lista();
+echo promedios();
+  echo mediana();
 ?>
+
 <p>Ejercicio 4</p>
 <?php
 
@@ -61,9 +74,6 @@ function tabla(){
     $n=4;
 echo '<table>';
   $potencia=1;
-for($i=1;$i<=$n;$i++)
-{
-   echo '<tr>';
    for($j=1;$j<=$n;$j++)
    {
      if($potencia=1){
@@ -85,10 +95,9 @@ for($i=1;$i<=$n;$i++)
 
      }
      $potencia++;
-       echo "<td>";
-                echo '</tr>';
+             echo '</tr>';
 
-   }
+   
 
 }
 echo '</table>';
@@ -97,5 +106,39 @@ echo '</table>';
 
 echo tabla();
 ?>
+<p>Ejercicio 5</p>
+<br> El siguiente ejercicio da como resultado una combinatoria de 2 datos que se establecen, en este caso estos datos hacen referencia al numero de integrantes y el numero de eventos.
+<br>
+
+<?php
+
+function libre(){
+  $integrantes=5;
+  $eventos=2;
+$totalI = 1;
+$totalE = 1;
+$totalR = 1; 
+$combinacion=0;
+  $resta=$integrantes-$eventos;
+  for ($i=1; $i<=$integrantes; $i++) {
+    $totalI = $totalI * $i; 
+  }
+
+  for ($i=1; $i<=$eventos;$i++) {
+    $totalE = $totalE * $i; 
+  }
+  
+  for ($i=1; $i<$resta+1 ;$i++) {
+    $totalR = $totalR * $i; 
+  }
+$combinacion=$totalI/($totalE*$totalR);
 
 
+echo $combinacion;
+
+}
+echo "La combinacion= ";
+echo libre();
+   echo "<br>";
+
+?>

@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>LAB9</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
+  
 <body>
+   <nav>
+      <div class="nav-wrapper">
+        <a href="index.php" class="brand-logo">LAB9</a>
+        
+      </div>
+    </nav>
+    <div class="container">
   <section> 
-    <h1>Preguntas</h1>
-    <h4> ¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.</h4>
+    <h4>Preguntas</h4>
+    <h6> ¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.</h6>
 
-    <p></p>
+    <p> La funcion phpinfo() despliega en formato de tabla la informaicon sobre la confirguracion del servidor.
+      <ol>
+        <li>  1er Dato: Informacion General tanto del servidor web como del sistema, como esta todo actualmente.   </li>
+        <li> 2do Dato: Informacion de la configuracion de los valores locales y maesttros que se encuentran en PHP</li>
+        <li>3er Dato: Informacion de todas las variables predefinidas de EGPCS(Environment,GET, POST, cookie,Server). 
+        </li>
+      </ol>
+    </p>
 
-    <h4>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?</h4>
+    <h6>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?</h6>
 
-    <p></p>
+    <p> Se debe verificar que servidor cuente con acceso al sitio desde cualquier parte. Sin embargo para poder lograr esto se deben tener en cuenta diferentes caracteristicas. </p>
 
-    <h4>¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.</h4>
-    <p></p>
-
+    <h6>¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.</h6>
+    <p>El cliente puede ver los campos que debe de llenar, la informacion y otras cosas lo que no ve es el controlador que del servidor que permite mostrar, procesar y dirigir. Por medio de los metodos POST y GET se comunican con el servidor y en ese momento se procesan los datos que han sido desplegado en un documento HTML que muy seguramente esta ligado a un documento de JS y CSS. </p>
+    <h6>Referencias</h6>
+    <ol>
+      <li>https://www.loopeando.com/que-es-y-como-crear-un-phpinfo/</li>
+      <li>https://www.w3schools.com/tags/ref_httpmethods.asp</li>
+      <li> Clase DAW- Eduardo Juarez</li>
+    </ol>
+      
   </section>
 
-  <h1>Ejercicios</h1>
+  <h5>Ejercicios</h5>
   
 
   
