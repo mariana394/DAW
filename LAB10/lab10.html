@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<link rel="stylesheet" type="text/css" href="lab7.css">
+
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB10</title>
+    <link rel="stylesheet" href="foundation.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="lab7.css">
+
+
+    <style>
+      .spacer{height:500px;}
+    </style>
+</head>
+<body style="margin:400">
+	<heather>
+	<h1>LAB10</h1>
+</header>
+
+<hr>
+ <ul class="tabs" data-tabs id="example-tabs">
+          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">P1</a></li>
+          <li class="tabs-title"><a href="#panel2">P2</a></li>
+           <li class="tabs-title"><a href="#panel3">P3</a></li>
+          <li class="tabs-title"><a href="#panel4">P4</a></li>
+         <li class="tabs-title"><a href="#panel5">P5</a></li>
+
+
+        </ul>
+
+        <div class="tabs-content" data-tabs-content="example-tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <p>¿Por qué es una buena práctica separar el controlador de la vista?
+              <ol>
+                <li> Para poder separar la lógica de la interfaz. </li>
+            <li> Hacer que sea mantenible</li>
+          <li> Facilitar su lectura</li>
+              </ol></p>
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <p> Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?
+              <br>
+      <li>$_SESSION= Se guarda la informacion que llega a través de los requests del usuario</li>
+      <li>$_SERVER= Tiene la informacion de las rutas/ubicacion de los scripts, son creados por el servidor web.</li>
+      <li>$_COOKIE= Conservar información sobre un usuario al pasar de una página a otra. </li>
+      <li>$_REQUEST=Captura los calores de las variables enviadas desde formularios con los métodos GET o POST.</li>
+      <li>$GLOBALS=Acceso a variables globales</li>
+
+            </p>
+          </div>
+
+          <div class="tabs-panel" id="panel3">
+            <p> Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.
+              <br>
+              <li>checkdate()= Comprueba si una fecha es valida por medio del paso de parametros, esto puede servir para el proyecto en caso de no utilizar date pickers para validar que una fecha de nacimiento ha sido ingresada de una manera correcta.</li>
+              <li>uniqid()= Toma el identificador unico de un prefijo basado en el tiempo actual en micorsegundos.</li>
+              
+            </p>
+          </div>
+
+              <div class="tabs-panel" id="panel4">
+            <p> ¿Qué es XSS y cómo se puede prevenir?
+              <br>Es un concepto enfocado en la vulnerabilidad informatica, permite insertar comandos que no deberian de estar ademas de malware en los navegadores. Se previene por medio de la instalacion de antivirus y mantener las aplicaciones con las actiualizaciones al dia. 
+            </p>
+          </div>
+
+ <div class="tabs-panel" id="panel5">
+            <p>Referencias:
+              <br> <ol>
+              <li>https://programacion.net/articulo/7_funciones_muy_poco_conocidas_de_php_pero_que_son_muy_utiles_1660</li>
+              <li>https://www.php.net/manual/en/function.uniqid.php</li>
+              <li>https://es.godaddy.com/blog/que-es-el-cross-site-scripting-xss-y-como-puedes-evitarlo/</li>
+  
+</ol>
+            </p>
+
+
+          </div>
+          
+        </div>
+
+    
+<p>
+  <br>
+            LAB:
+              <br>
+
+Mariana/IngresaeCuentas
+  <br>
+
+
+https://github.com/EmilioPadilla/Systemy.git
+  <br>
+
+</p>
+
+ 
+
+   
+
+
+
+
+  <!--Visibilidad-->
+<br>
+<br>
+  
+<footer>
+            <h4> A01704671 Mariana Favarony Avila  <a href="https://www.sublimetext.com/">SUBLIME </a></h4>
+           
+
+        </footer>
+            
+        <script type = "text/javascript" src = "lab7.js"></script>
+        <script src="jquery.js"></script>
+    <script src="what-input.js"></script>
+    <script src="foundation.js"></script>
+    <script src="app.js"></script>
+</heather>
+</body>
+</html>

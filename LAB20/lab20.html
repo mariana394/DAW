@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<link rel="stylesheet" type="text/css" href="lab7.css">
+
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB20</title>
+    <link rel="stylesheet" href="foundation.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="lab7.css">
+
+
+    <style>
+      .spacer{height:500px;}
+    </style>
+</head>
+<body style="margin:400">
+	<heather>
+	<h1>LAB20</h1>
+</header>
+
+<hr>
+ <ul class="tabs" data-tabs id="example-tabs">
+          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">P1</a></li>
+          <li class="tabs-title"><a href="#panel2">P2</a></li>
+           <li class="tabs-title"><a href="#panel3">P3</a></li>
+              <li class="tabs-title"><a href="#panel4">P3</a></li>
+              <li class="tabs-title"><a href="#panel5">P3</a></li>
+
+
+
+        </ul>
+
+        <div class="tabs-content" data-tabs-content="example-tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <p> Elabora un diagrama y explica cómo funciona AJAX.
+              <br>
+                AJAX permite que las aplicaciones web funcionen me manera asincrona, permitiendo que se pueda solicitar informacion al servidor desde una pagina previamente cargada. Este funciona por medio de php y otros lenguajes del servidor, se hace una peticionel servidor la realiza y regresa los datos. Mientras sucede esto la pagina esta en espera, este tiempo puede aumentar dependiendo de la cantidad de peticiones que se esten haciendo al mismo tiempo.
+            
+             </p>
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <p> ¿Qué alternativas a jQuery existen?
+              <br>
+             <li>Zepto.js</li>
+             <li>XUI</li>
+             <li>Snack.js</li>
+             <li>JS puro</li>
+
+       
+     
+
+            </p>
+          </div>
+<div class="tabs-panel" id="panel3">
+            <p> ¿Qué es una promesa en js?
+              <br>
+              Es un objeto que representa el final de una operacion asincrona. El objeto tiene adjunto las funciones de callback en vez de pasar callbacks a una funcion. Esta se crea utilizando un constructor que se llama Promise y se le pasan dos parametros a la funcion, resolve y reject, lo que nos permite saber si fue resuelto o fue rechazado.
+              
+            </p>
+          </div>
+          <div class="tabs-panel" id="panel4">
+            <p> ¿Cómo funcionan async y await?
+              <br>
+              Son funciones asincronas que luego de ser ejecutadas esperan a que una promesa sea resuelta de manera sincrona. Cuando la funcion asyn regresa un valor la promesa se resuleve con este de lo contrario si lanza una excepcion la promesa la rechaza con el valor generado. En esta funcion se puede contener la expresion await la cual genera una pauda en la ejecucion de la funcion asincrona y espera la solucion de la promesa.
+            </p>
+          </div>
+         
+ <div class="tabs-panel" id="panel5">
+            <p>Referencias:
+              <br> <ol>
+              <li>https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Usar_promesas#:~:text=En%20esta%20p%C3%A1gina&text=Una%20Promise%20(promesa%20en%20castellano,fracaso%20de%20una%20operaci%C3%B3n%20as%C3%ADncrona.&text=Esencialmente%2C%20una%20promesa%20es%20un,pasar%20callbacks%20a%20una%20funci%C3%B3n.</li>
+              <li>https://platzi.com/blog/que-es-y-como-funcionan-las-promesas-en-javascript/</li>
+              <li>https://www.etnassoft.com/2011/03/28/alternativas-a-jquery//</li>
+              <li>https://www.adictosaltrabajo.com/2017/02/09/asyncawait-en-javascript/</li>
+              <li>https://www.oscarblancarteblog.com/2019/03/15/javascript-async-await/</li>
+              <li>https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/funcion_asincrona</li>
+              <li>https://www.digitallearning.es/blog/que-es-ajax/</li>
+              
+  
+</ol>
+            </p>
+
+
+          </div>
+          
+        </div>
+
+    
+<p>
+  <br>
+            LAB:
+              <br>
+
+Mariana/BuscarCuentas
+  <br>
+
+
+https://github.com/EmilioPadilla/Systemy.git
+  <br>
+
+</p>
+
+ 
+
+   
+
+
+
+
+  <!--Visibilidad-->
+<br>
+<br>
+  
+<footer>
+            <h4> A01704671 Mariana Favarony Avila  <a href="https://www.sublimetext.com/">SUBLIME </a></h4>
+           
+
+        </footer>
+            
+        <script type = "text/javascript" src = "lab7.js"></script>
+        <script src="jquery.js"></script>
+    <script src="what-input.js"></script>
+    <script src="foundation.js"></script>
+    <script src="app.js"></script>
+</heather>
+</body>
+</html>
