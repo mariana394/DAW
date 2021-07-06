@@ -1,0 +1,54 @@
+<div class="row">
+    <form class="col s12" action="member.php" method="POST">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Maria" id="nombre" name="nombre" type="text" class="validate" required>
+          <label for="nombre">Nombres </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Gonzalez" id="apellido" name="apellido" type="text" class="validate" required>
+          <label for="apellido">Apellidos</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="4" id="semestre" name="semestre" type="number" class="validate" required max="10" min="1">
+          <label for="semestre">Semestre</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col s12">
+          <div class="input-field col s12">
+            <input placeholder="A01704948" id="matricula" name="matricula" type="text" class="validate" required>
+            <label for="matricula">Matricula</label>
+          </div>
+        </div>
+        <label>Opciones de Cargo</label>
+  <select class="browser-default">
+    <option value="" disabled selected>Seleccione su cargo</option>
+    <option value="1">Presidente</option>
+    <option value="2">Vice Presidente</option>
+    <option value="3">Tesorero</option>
+    <option value="4">Coordinador de Filantropia</option>
+  </select>
+        <div class="row">
+        <div class="col s12">
+          <div class="input-field col s12">
+            <input placeholder="Presidente" id="cargo" name="cargo" type="text" class="validate" required>
+            <label for="cargo">Escribalo porfavor</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col s12">
+          <div class="input-field col s12">
+            <input class="btn" type="submit" value="Inscribirme!">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SASTI 2020</title>
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+       <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.php" class="brand-logo">SASTI2020</a>
+        
+      </div>
+    </nav>
+    <section>
+     
+
+<div class="container">
+       <h2>Preguntas</h2>
+      <h5><strong>¿Por qué es una buena práctica separar el controlador de la vista?</h5></strong>
+      <p>Para matener una interfaz mas amigable y mas legible. Ademas de separar las operaciones, es buena practica dado que al tener capas esta mas estructurado y mejor de entender. 
+       
+      </p>
+      <h5><strong>Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?
+      </h5></strong>
+      <p>
+      <ul>
+        <li>'$SERVER'-> Array que tiene informacion de las rutas y las ubicaciones de script. Su funcion es obtener informacion por medio de entradas que han sido creadas por el servidor web pero no todos las proporcionan.</li>
+        <li>'$FILES'-> Arreglo asociativo de elementos que sube al script por mdeio del metodo POST.</li>
+        <li>'$COOKIE'->Variables que se pasan al script actual por medio de cookies HTTP</li>
+        <li>'$SESSION'-> Contiene variables de sesion.</li>
+        <li> '$REQUEST'->Contiene el contenido de GET,POT y COOKIE</li>
+        <li>'$ENV'-> A traves del metodo del entorno contiene las variables pasadas al script actual</li>
+
+          </ul>
+      </p>
+<h5><strong>Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.</strong></h5>
+<p>
+  <ol>
+    <li>date_sun_info — Devuelve una matriz con información sobre la puesta/salida del sol y el comienzo/final del crepúsculo: date_sun_info ( int $time , float $latitude , float $longitude ) : array</li>
+
+    <li>phpInfo() - Devuelve la informacion actual de php</li>
+</p>
+
+<h5><strong>¿Qué es XSS y cómo se puede prevenir?</strong></h5>
+<p> XSS o cross-site scripting es un tipo de vulnerabilidad informatica que se da comunmente en las aplicaciones web. Estos sucede cuando no hay barreras contra los ataques de diferentes tipos de comandos para robar informacion de los usuarios. Esto se puede prevenir por medio de una instalacion de seguridad que este actualizada para que ante uno de estos casos sea bloqueada automaticamente. Tmabien se puede hacer una redireccion a algun sitio de phishing que tiene la proteccion antivirus. Por otor lado se pueden encender las configuraciones personalizadas.
+      <h5><strong>Referencias</strong></h5>
+      <p>
+        <li>https://www.php.net/manual/es/language.variables.superglobals.php</li>
+        <li>https://es.godaddy.com/blog/que-es-el-cross-site-scripting-xss-y-como-puedes-evitarlo/</li>
+        <li>https://www.welivesecurity.com/la-es/2015/04/29/vulnerabilidad-xss-cross-site-scripting-sitios-web/</li>
+        <li>https://www.php.net/manual/es/function.phpinfo.php</li>
+        <li>https://www.php.net/manual/es/indexes.functions.php</li>
+
+
